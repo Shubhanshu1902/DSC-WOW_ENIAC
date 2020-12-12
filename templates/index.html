@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENIAC</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="heading">
+        <h1>ENIAC</h1>
+    </div>
+    <br><br>
+    <div class="img">
+        <img src = "{{url_for('static',filename='cal.png')}}">
+    </div>
+    
+    <h2>Calculator and Converter</h2>
+    <br>
+    <div class="content">
+        <h5>
+            This is the project by ENIAC.
+We have a Calculator and Converter. In the calculator 
+you can easily calculate very large numbers easily in the fraction of seconds.In the 
+converter you can convert binary, decimal, hexadecimal and octal to each other.
+
+        </h5>
+    </div>
+    <br><br>
+    <div class="container">
+        <button onclick="document.location='/calc'" class="bt1">Calculator</button>
+        
+        <button onclick="document.location='/binary'" class="bt2">Converter</button>
+    </div>
+    
+</body>
+
+</html>

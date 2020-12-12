@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet" href="{{url_for('static',filename='calc.css')}}"
+    />
+  </head>
+
+  <body>
+    <div class="heading">
+      <h3>Calculator</h3>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+      <form action="/sendCalc" method="POST">
+        <label for="Number One">First Number</label>
+        <input
+          type="text"
+          placeholder="First Number"
+          class="u-full-width"
+          name="num1"
+        />
+
+        <label for="Number Two">Second Number</label>
+        <input
+          type="text"
+          placeholder="Second Number"
+          class="u-full-width"
+          name="num2"
+        />
+        <br>
+        <br><br>
+        <label for="Operation">Operation</label>
+        <select class="u-full-width" name="operation">
+          <option value="add">Add</option>
+          <option value="subtract">Subtract</option>
+          <option value="multiply">Multiply</option>
+          <option value="divide">Divide</option>
+        </select>
+        <br><br><br>
+        <input type="submit" value="Calculate" id="calc_btn">
+        <br><br>
+        <div class="alert">
+          {{ result }}
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  body {
+
+    background-image: url("bg-small.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100%;
+
+  }
+  
+  .header {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: rgba(22, 0, 223, 0.527);
+  }
+  .heading {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2em;
+    font-size: 2em;
+  }
+  .container {
+    font: 100;
+  }
+
+  form {
+    margin: 3rem;
+    padding: 1rem;
+    background: rgba(27, 33, 72,0.9);
+  }
+  label{
+    font-family: sans-serif;
+    color: white;
+    margin: 2em;
+  }
+  input{
+    margin-left: 3em;
+  }
+  .form-group {
+    padding: 0.5rem 0;
+  }
+  .form-group label {
+    display: block;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 0.3rem 0.3rem;
+    margin: 0.5rem 0;
+  }
+  .form-group select {
+    width: 100%;
+    border: none;
+    margin: 0.2rem 0;
+  }
+  .btn {
+    display: block;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background: rgba(57, 2, 83, 0.527);
+    color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+  }
+  .alert {
+    display: block;
+    padding: 0.5rem;
+    background: rgb(93, 167, 48);
+    color: white;
+    border: none;
+    width: 100%;
+    text-align: center;
+  }

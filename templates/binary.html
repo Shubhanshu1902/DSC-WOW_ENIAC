@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Converter</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='binary.css')}}" />
+</head>
+
+<body>
+  <div class="heading">
+
+    <h3>Converter</h3>
+  </div>
+  
+  <!-- Form -->
+  <div class="container">
+    <form action="/sendBinary" method="POST">
+      <label for="input-operation">Input Data Type:</label>
+      <select class="u-full-width" name="input-operation">
+        <option value="Binary">Binary</option>
+        <option value="Decimal">Decimal</option>
+        <option value="Hexadecimal">Hexadecimal</option>
+        <option value="Octal">Octal</option>
+      </select>
+      <br><br><br>
+      <label for="num">Number</label>
+      <input type="text" placeholder="Number" class="u-full-width" name="num">
+      <br><br><br>
+      <label for="output-operation">Output Data Type:</label>
+      <select class="u-full-width" name="output-operation">
+        <option value="Decimal">Decimal</option>
+        <option value="Binary">Binary</option>
+        <option value="Hexadecimal">Hexadecimal</option>
+        <option value="Octal">Octal</option>
+      </select>
+      <br><br><br>
+      <input type="submit" value="Calculate" id="calc_btn">
+      <br><br>
+      <div class="alert">
+        {{ result }}
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
